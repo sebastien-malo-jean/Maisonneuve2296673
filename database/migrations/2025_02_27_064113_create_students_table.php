@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('address');
+            $table->string('phone');
+            $table->string('email')->unique();
+            $table->date('dateOfBirth');
+            $table->unsignedBigInteger('city_id');
+            $table->foreign('city_id')->references('id')->on('cities');
             $table->timestamps();
         });
     }
