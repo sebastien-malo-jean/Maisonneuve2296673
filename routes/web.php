@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//route de base à changer
 Route::get('/', function () {
     return view('welcome');
 });
+
+//route pour les étudiants
+Route::get('/students', [StudentController::class, 'index'])->name('student.index');
