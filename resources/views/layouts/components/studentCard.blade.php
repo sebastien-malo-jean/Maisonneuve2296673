@@ -8,7 +8,7 @@
             <li><strong>Téléphone</strong><br>{{ $student->phone }}</li>
             <li><strong>email</strong><br>{{ $student->email }}</li>
             <li><strong>Aniversaire</strong><br>{{ $student->dateOfBirth }}</li>
-            <li><strong>Ville</strong><br>{{ $student->city_id }}</li>
+            <li><strong>Ville</strong><br>{{ $student->city->name }}</li>
         </ul>
     </section>
     <footer class="card-footer">
