@@ -5,9 +5,7 @@
 @section('content')
 <!-- Section d'introduction -->
 <section class="jumbotron text-center bg-light py-5">
-    <div class="container background-image">
-        <img src="https://www.cmaisonneuve.qc.ca/wp-content/themes/cmaisonneuve/img/template/logo_college_maisonneuve.png"
-            alt="Collège Maisonneuve" class="img-fluid">
+    <div class="container">
         <h1 class="display-4">Bienvenue sur Maisonneuve Connect</h1>
         <p class="lead">La plateforme qui connecte les étudiants du Collège Maisonneuve pour des échanges efficaces et
             dynamiques.</p>
