@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::get('/', function () {
 
 //route pour les étudiants
 Route::get('/students', [StudentController::class, 'index'])->name('student.index');
+Route::get('/student/{student}', [StudentController::class, 'show'])->name('student.show');

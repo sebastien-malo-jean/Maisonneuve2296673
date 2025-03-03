@@ -13,7 +13,7 @@
     </section>
     <footer class="card-footer">
         <div class="text-center">
-            <a href="#" class="btn btn-primary">Voir l'étudiant</a>
+            <a href="{{ route("student.show", $student->id) }}" class="btn btn-primary">Voir l'étudiant</a>
         </div>
     </footer>
 </article>
