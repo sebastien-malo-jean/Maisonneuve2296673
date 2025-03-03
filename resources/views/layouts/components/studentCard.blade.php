@@ -1,4 +1,4 @@
-<article class="card">
+<article class="card h-100 d-flex flex-column">
     <section class="card-header">
         <h3 class="card-title">{{ $student->name }}</h3>
     </section>

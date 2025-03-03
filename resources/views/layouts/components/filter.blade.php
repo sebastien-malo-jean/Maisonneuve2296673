@@ -25,6 +25,15 @@
                     @endforeach
                 </select>
             </div>
+            <div class="mb-3">
+                <label for="orderBy" class="form-label">Trier par</label>
+                <select name="orderBy" id="orderBy" class="form-select">
+                    <option value="name" {{ request('orderBy') == 'name' ? 'selected' : '' }}>Nom</option>
+                    <option value="dateOfBirth" {{ request('orderBy') == 'dateOfBirth' ? 'selected' : '' }}>Date de
+                        naissance</option>
+                    <option value="email" {{ request('orderBy') == 'email' ? 'selected' : '' }}>Email</option>
+                </select>
+            </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="order" id="asc" value="asc" checked>
                 <label class="form-check-label" for="asc">

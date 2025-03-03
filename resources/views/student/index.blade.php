@@ -21,6 +21,10 @@
             </div>
             @endforeach
         </div>
+        <!-- Pagination -->
+        <div class="d-flex justify-content-center">
+            {{ $students->links('pagination::bootstrap-5') }}
+        </div>
     </div>
 </div>
 
