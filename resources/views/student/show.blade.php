@@ -1,5 +1,15 @@
 @extends('layouts.app')
-@section('title', 'Students')
+@section('title', "Présentation d'étudiant")
 @section('content')
-<h1>show</h1>
+<header class="mb-5">
+    <h1>Présentation d'étudiant</h1>
+    <h2>Voici la carte de l'étudiant(e) {{ $student->name }}.</h2>
+</header>
+<section class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            @include('layouts.components.studentCard', ['student' => $student])
+        </div>
+    </div>
+</section>
 @endsection

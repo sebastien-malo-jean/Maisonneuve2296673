@@ -13,7 +13,16 @@
     </section>
     <footer class="card-footer">
         <div class="text-center">
-            <a href="{{ route("student.show", $student->id) }}" class="btn btn-primary">Voir l'étudiant</a>
+            @if(request()->routeIs('student.show') && request()->route('student') instanceof \App\Models\Student &&
+            request()->route('student')->id == $student->id)
+            <!-- Ne pas afficher le bouton si nous sommes déjà sur la page d'un étudiant -->
+            <div class="d-flex justify-content-between">
+                <a href="" class="btn btn-primary">Modifier</a>
+                <a href="" class="btn btn-danger">Supprimer</a>
+            </div>
+            @else
+            <a href="{{ route('student.show', $student->id) }}" class="btn btn-primary">Voir l'étudiant</a>
+            @endif
         </div>
     </footer>
 </article>
