@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//route de base à changer
+//route de base de l'application
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,3 +22,5 @@ Route::get('/', function () {
 //route pour les étudiants
 Route::get('/students', [StudentController::class, 'index'])->name('student.index');
 Route::get('/student/{student}', [StudentController::class, 'show'])->name('student.show');
+Route::get('/create/student', [StudentController::class, 'create'])->name('student.create');
+Route::post('/create/student', [StudentController::class, 'store'])->name('student.store');

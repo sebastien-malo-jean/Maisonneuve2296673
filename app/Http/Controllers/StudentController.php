@@ -60,7 +60,8 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        $cities = City::all();
+        return view('student.create', ['cities' => $cities]);
     }
 
     /**

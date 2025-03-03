@@ -8,7 +8,7 @@
 <section class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            @include('layouts.components.studentCard', ['student' => $student])
+            @include('layouts.components.studentCardGet', ['student' => $student])
         </div>
     </div>
 </section>

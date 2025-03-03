@@ -17,7 +17,7 @@
             @foreach($students as $student)
             <div class="col-md-4 mb-4">
                 <!-- Carte de l'étudiant -->
-                @include('layouts.components.studentCard', ['student' => $student])
+                @include('layouts.components.studentCardGet', ['student' => $student])
             </div>
             @endforeach
         </div>
