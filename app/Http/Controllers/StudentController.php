@@ -39,7 +39,7 @@ class StudentController extends Controller
         // Si le tri est demandé par la ville, on fait une jointure sur la table cities
         if ($orderBy == 'city') {
             $query->join('cities', 'students.city_id', '=', 'cities.id')
-                ->orderBy('cities.name', $order);  // Trier par le nom de la ville
+                ->orderBy('cities.name', $order);
         } else {
             // Sinon, on trie par le champ spécifié (par exemple, le nom de l'étudiant)
             $query->orderBy($orderBy, $order);
@@ -69,7 +69,27 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validation
+        $request->validate([
+            'name' => 'required|string|min:3|max:50',
+            'address' => 'required|string|min:3|max:200',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'dateOfBirth' => 'required|date',
+            'city_id' => 'required|numeric',
+        ]);
+        //verification de la validation
+
+        $student = Student::create([
+            'name' => $request->name,
+            'address' => $request->address,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'dateOfBirth' => $request->dateOfBirth,
+            'city_id' => $request->city_id,
+        ]);
+
+        return redirect()->route('student.show', ['student' => $student->id])->with('success', "L'élève à été créé avec succès!");
     }
 
     /**
