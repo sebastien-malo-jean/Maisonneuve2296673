@@ -1,0 +1,146 @@
+/* === Styles Généraux === */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+}
+
+/* === Variables de Couleurs === */
+:root {
+    --primary-color: #003E7E;
+    /* Violet foncé */
+    --secondary-color: #F7EBEC;
+    /* Doré */
+    --tertiary-color: #75C9C8;
+    /* Vert menthe */
+    --light-bg: #f4f2ff;
+    /* Fond clair adouci */
+    --dark-text: #2c2c2c;
+    /* Texte sombre */
+    --blue-light: #00a9c9;
+    /* Bleu cyan */
+    --blue-dark: #003e7e;
+    /* Bleu foncé */
+}
+
+/* === Navbar === */
+.navbar {
+    background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, var(--primary-color) 65%);
+    /* Dégradé de bleu clair à violet foncé */
+}
+
+.navbar .nav-link {
+    color: black !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--blue-dark) !important;
+}
+
+/* === Conteneur Principal === */
+main.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* === Alertes === */
+.alert-success {
+    background-color: var(--blue-light);
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Footer === */
+.footer {
+    background-color: var(--blue-dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* === Boutons === */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #003871;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* === Liens === */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blue-light);
+    text-decoration: underline;
+}
+
+/* === Jumbotron === */
+.jumbotron {
+    background: var(--light-bg);
+    color: var(--dark-text);
+    animation: fade-in 1s ease-in-out;
+}
+
+/* === Cartes de Fonctionnalités === */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* === Section d'Appel à l'Action === */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-primary .btn-light {
+    color: var(--primary-color);
+    border-color: white;
+}
+
+.bg-primary .btn-light:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* === Animation fade-in === */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

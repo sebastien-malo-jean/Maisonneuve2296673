@@ -7,8 +7,8 @@
 <section class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <article class="card h-100 d-flex flex-column">
-                <section class="card-body">
+            <article class=" h-100 d-flex flex-column">
+                <section>
                     <form action="{{ route('student.update', $student->id) }}" method="post">
                         @csrf
                         @method('put')
@@ -68,7 +68,10 @@
                                 <select name="city_id" id="city_id" class="form-select">
                                     <option value="">Toutes les villes</option>
                                     @foreach($cities as $city)
-                                    <option value="{{ $city->id }}">{{ $city->name }}</option>
+                                    <option value="{{ $city->id }}" @selected(old('city_id', $student->city_id) ==
+                                        $city->id)>
+                                        {{ $city->name }}
+                                    </option>
                                     @endforeach
                                 </select>
                                 @if ($errors->has('city_id'))
