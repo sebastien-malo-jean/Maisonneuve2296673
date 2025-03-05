@@ -89,7 +89,7 @@ class StudentController extends Controller
             'city_id' => $request->city_id,
         ]);
 
-        return redirect()->route('student.show', ['student' => $student->id])->with('success', "L'élève à été créé avec succès!");
+        return redirect()->route('student.show', ['student' => $student->id])->with('success', "L'étudiant à été créé avec succès!");
     }
 
     /**
@@ -123,8 +123,7 @@ class StudentController extends Controller
             'dateOfBirth' => 'required|date',
             'city_id' => 'required|numeric',
         ]);
-        //verification de la validation
-
+        //update sur l'étudiant
         $student->update([
             'name' => $request->name,
             'address' => $request->address,
@@ -134,7 +133,7 @@ class StudentController extends Controller
             'city_id' => $request->city_id,
         ]);
 
-        return redirect()->route('student.show', ['student' => $student->id])->with('success', 'Task updated successfully!');
+        return redirect()->route('student.show', ['student' => $student->id])->with('success', 'Étudiant modifié avec succès!');
     }
 
     /**
@@ -143,6 +142,6 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         $student->delete();
-        return redirect()->route('student.index')->with('success', 'Étudiant suprimer avec succès!');
+        return redirect()->route('student.index')->with('success', 'Étudiant suprimé avec succès!');
     }
 }
