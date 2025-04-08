@@ -28,7 +28,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Connexion</a>
-                    <a class="dropdown-item" href="#">Création de compte</a>
+                    <a class="dropdown-item" href="{{ route('user.create') }}">Création de compte</a>
                     <a class="dropdown-item" href="#">Déconnexion</a>
                 </div>
             </li>
