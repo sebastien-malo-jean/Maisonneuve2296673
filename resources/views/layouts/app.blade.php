@@ -21,7 +21,7 @@
 </head>
 
 <body class="d-flex flex-column vh-100">
-    <header class="p-3">
+    <header class="">
         @include('layouts.components.navbar')
     </header>
 
@@ -35,8 +35,7 @@
         @yield('content')
     </main>
 
-    <footer
-        class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 px-3 my-4 border-top">
+    <footer class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 px-3 border-top">
         @include('layouts.components.footer')
     </footer>
 
