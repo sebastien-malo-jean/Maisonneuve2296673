@@ -26,7 +26,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('user.create');
+        $cities = \App\Models\City::all();
+        return view('user.create', ["cities" => $cities]);
     }
 
     /**
