@@ -4,6 +4,7 @@ use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SetLocaleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,9 @@ Route::post('/registration', [UserController::class, 'store'])->name('user.store
 // routes pour l'authentification
 Route::get('/login', [AuthController::class, 'create'])->name('login');
 Route::post('/login', [AuthController::class, 'store'])->name('login.store');
+
+// routes pour la langue
+Route::get('/lang/{locale}', [SetLocaleController::class, 'index'])->name('lang');
 
 // middleware pour les routes protégées
 Route::middleware('auth')->group(function () {

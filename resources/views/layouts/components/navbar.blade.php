@@ -24,8 +24,26 @@
                     <a class="dropdown-item" href="{{ route('student.index') }}">Students list</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Language
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="nav-link" href="{{ route('lang', 'en') }}">English</a>
+                    <a class="nav-link" href="{{ route('lang', 'fr') }}">French</a>
+                </div>
+            </li>
         </ul>
+        <div class="dropdown ms-auto me-3">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+            </ul>
+        </div>
     </div>
+
     <div class="d-flex justify-content-end me-3">
         @auth
         <span class="navbar-text me-3">Hello, {{ Auth::user()->name }}</span>
