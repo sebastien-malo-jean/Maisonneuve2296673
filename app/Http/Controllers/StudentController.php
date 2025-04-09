@@ -73,7 +73,6 @@ class StudentController extends Controller
         $request->validate([
             'name' => 'required|string|min:3|max:50',
             'address' => 'required|string|min:3|max:200',
-            'email' => 'required|email',
             'phone' => 'required',
             'dateOfBirth' => 'required|date',
             'city_id' => 'required|numeric',
@@ -83,7 +82,6 @@ class StudentController extends Controller
         $student = Student::create([
             'name' => $request->name,
             'address' => $request->address,
-            'email' => $request->email,
             'phone' => $request->phone,
             'dateOfBirth' => $request->dateOfBirth,
             'city_id' => $request->city_id,
@@ -118,7 +116,6 @@ class StudentController extends Controller
         $request->validate([
             'name' => 'required|string|min:3|max:50',
             'address' => 'required|string|min:3|max:200',
-            'email' => 'required|email',
             'phone' => 'required',
             'dateOfBirth' => 'required|date',
             'city_id' => 'required|numeric',
@@ -127,7 +124,6 @@ class StudentController extends Controller
         $student->update([
             'name' => $request->name,
             'address' => $request->address,
-            'email' => $request->email,
             'phone' => $request->phone,
             'dateOfBirth' => $request->dateOfBirth,
             'city_id' => $request->city_id,

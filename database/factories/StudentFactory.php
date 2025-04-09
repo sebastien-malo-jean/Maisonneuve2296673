@@ -26,7 +26,6 @@ class StudentFactory extends Factory
             'name' => $user->name,
             'address' => $this->faker->address(),
             'phone' => $this->faker->phoneNumber(),
-            'email' => $user->email,
             'dateOfBirth' => $this->faker->date(),
             'city_id' => City::inRandomOrder()->first()->id,
             'user_id' => $user->id,
