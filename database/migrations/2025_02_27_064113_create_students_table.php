@@ -19,7 +19,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->date('dateOfBirth');
             $table->unsignedBigInteger('city_id');
+            $table->unsignedBigInteger('user_id');
             $table->foreign('city_id')->references('id')->on('cities');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
