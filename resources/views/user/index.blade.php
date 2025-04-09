@@ -14,7 +14,7 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">User</th>
-                            <th scope="col">Tasks</th>
+                            <th scope="col">Students</th>
                             <th scope="col">Edit</th>
                         </tr>
                     </thead>
@@ -23,13 +23,16 @@
                         <tr>
                             <th scope="row">{{$user->id}}</th>
                             <td>{{$user->name}}</td>
+
                             <td>
                                 <ul>
+                                    @if ($user->student)s->count() > 0)
                                     @forelse($user->students as $student)
-                                    <li>{{$student->title}}</li>
+                                    <li>{{$student->name}}</li>
                                     @empty
-                                    <li class="text-danger"> There are no tasks to list</li>
+                                    <li class="text-danger"> There is no student to list</li>
                                     @endforelse
+                                    @endif
                                 </ul>
                             </td>
                             <td>
