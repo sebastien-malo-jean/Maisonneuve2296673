@@ -3,6 +3,7 @@
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +26,18 @@ Route::get('/students', [StudentController::class, 'index'])->name('student.inde
 Route::get('/student/{student}', [StudentController::class, 'show'])->name('student.show');
 
 // routes pour les users
-Route::get('/users', [UserController::class, 'index'])->name('user.index');
 Route::get('/registration', [UserController::class, 'create'])->name('user.create');
 Route::post('/registration', [UserController::class, 'store'])->name('user.store');
-Route::get('/edit/user/{user}', [UserController::class, 'edit'])->name('user.edit');
-Route::put('/edit/user/{user}', [UserController::class, 'update'])->name('user.update');
-Route::delete('/user/{user}', [UserController::class, 'destroy'])->name('user.destroy');
+
+// routes pour l'authentification
+Route::get('/login', [AuthController::class, 'create'])->name('login');
+Route::post('/login', [AuthController::class, 'store'])->name('login.store');
+
+// middleware pour les routes protégées
+Route::middleware('auth')->group(function () {
+    Route::get('/users', [UserController::class, 'index'])->name('user.index');
+    Route::get('/edit/user/{user}', [UserController::class, 'edit'])->name('user.edit');
+    Route::put('/edit/user/{user}', [UserController::class, 'update'])->name('user.update');
+    Route::delete('/user/{user}', [UserController::class, 'destroy'])->name('user.destroy');
+    Route::get('/logout', [AuthController::class, 'destroy'])->name('logout');
+});

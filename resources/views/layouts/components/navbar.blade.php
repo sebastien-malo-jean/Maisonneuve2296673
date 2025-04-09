@@ -12,6 +12,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">Accueil</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.index') }}">Utilisateurs</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -20,18 +23,17 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{{ route('student.index') }}">Liste d'étudiants</a>
                 </div>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Compte
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="{{ route('user.index') }}">Utilisateurs</a>
-                    <a class="dropdown-item" href="#">Connexion</a>
-                    <a class="dropdown-item" href="{{ route('user.create') }}">Création de compte</a>
-                    <a class="dropdown-item" href="#">Déconnexion</a>
-                </div>
             </li>
         </ul>
+    </div>
+    <div class="d-flex justify-content-end me-3">
+        @auth
+        <span class="navbar-text me-3">Hello, {{ Auth::user()->name }}</span>
+        <a href="{{ route('logout') }}" class="btn btn-secondary ms-2">Logout</a>
+        @endauth
+        @guest
+        <a href="{{ route('user.create') }}" class="btn btn-primary">Create acount</a>
+        <a href="{{ route('login') }}" class="btn btn-secondary ms-2">Login</a>
+        @endguest
     </div>
 </nav>

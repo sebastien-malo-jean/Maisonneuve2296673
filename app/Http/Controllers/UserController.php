@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Student;
 use App\Models\City;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -27,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $cities = \App\Models\City::all();
+        $cities = City::all();
         return view('user.create', ["cities" => $cities]);
     }
 
