@@ -35,7 +35,37 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|string|min:3|max:50',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6|max:20',
+            'address' => 'required|string|min:3|max:200',
+            'phone' => 'required|string',
+            'dateOfBirth' => 'required|date',
+            'city_id' => 'required|numeric',
+        ]);
+
+        // Créer le user
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'email_verified_at' => now(),
+        ]);
+
+        // Créer le student lié
+        $student = new Student([
+            'name' => $user->name,
+            'email' => $user->email,
+            'address' => $request->address,
+            'phone' => $request->phone,
+            'dateOfBirth' => $request->dateOfBirth,
+            'city_id' => $request->city_id,
+        ]);
+
+        $user->students()->save($student);
+
+        return redirect()->route('user.index')->with('success', 'Utilisateur et étudiant créés avec succès !');
     }
 
     /**
