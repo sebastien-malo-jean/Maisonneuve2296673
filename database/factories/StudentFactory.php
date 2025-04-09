@@ -23,7 +23,6 @@ class StudentFactory extends Factory
         $user = User::factory()->create(); // Crée le User
 
         return [
-            'name' => $user->name,
             'address' => $this->faker->address(),
             'phone' => $this->faker->phoneNumber(),
             'dateOfBirth' => $this->faker->date(),

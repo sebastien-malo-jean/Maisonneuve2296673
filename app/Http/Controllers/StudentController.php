@@ -13,16 +13,10 @@ class StudentController extends Controller
      */
     public function index(Request $request)
     {
-        $query = Student::query();
+        $query = Student::query()->join('users', 'students.user_id', '=', 'users.id')
+            ->select('students.*', 'users.name as user_name');
 
         // Filtrage des étudiants selon les champs du formulaire
-        if ($request->filled('name')) {
-            $query->where('students.name', 'like', '%' . $request->name . '%');
-        }
-
-        if ($request->filled('email')) {
-            $query->where('students.email', 'like', '%' . $request->email . '%');
-        }
 
         if ($request->filled('birthOfDate')) {
             $query->whereDate('students.dateOfBirth', '>', $request->birthOfDate);
@@ -33,7 +27,7 @@ class StudentController extends Controller
         }
 
         // Appliquer le tri selon le champ spécifié
-        $orderBy = $request->input('orderBy', 'students.name');
+        $orderBy = $request->input('orderBy', 'users.name'); // <-- ici on trie sur users.name
         $order = $request->input('order', 'asc');
 
         // Si le tri est demandé par la ville, on fait une jointure sur la table cities
@@ -46,7 +40,7 @@ class StudentController extends Controller
         }
 
         // Récupérer les étudiants avec leur ville associée
-        $students = $query->with('city')->paginate(25);
+        $students = $query->with('city')->paginate(10);
 
         // Récupérer toutes les villes pour le filtre
         $cities = City::all();
@@ -71,7 +65,6 @@ class StudentController extends Controller
     {
         //validation
         $request->validate([
-            'name' => 'required|string|min:3|max:50',
             'address' => 'required|string|min:3|max:200',
             'phone' => 'required',
             'dateOfBirth' => 'required|date',
@@ -80,7 +73,6 @@ class StudentController extends Controller
         //verification de la validation
 
         $student = Student::create([
-            'name' => $request->name,
             'address' => $request->address,
             'phone' => $request->phone,
             'dateOfBirth' => $request->dateOfBirth,
@@ -114,7 +106,6 @@ class StudentController extends Controller
     {
         //validation
         $request->validate([
-            'name' => 'required|string|min:3|max:50',
             'address' => 'required|string|min:3|max:200',
             'phone' => 'required',
             'dateOfBirth' => 'required|date',
@@ -122,7 +113,6 @@ class StudentController extends Controller
         ]);
         //update sur l'étudiant
         $student->update([
-            'name' => $request->name,
             'address' => $request->address,
             'phone' => $request->phone,
             'dateOfBirth' => $request->dateOfBirth,
