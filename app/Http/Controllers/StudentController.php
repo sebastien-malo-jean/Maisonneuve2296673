@@ -98,8 +98,7 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
-        $cities = City::all();
-        return view('student.edit', ['student' => $student, 'cities' => $cities]);
+        //
     }
 
     /**
@@ -107,22 +106,7 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        //validation
-        $request->validate([
-            'address' => 'required|string|min:3|max:200',
-            'phone' => 'required',
-            'dateOfBirth' => 'required|date',
-            'city_id' => 'required|numeric',
-        ]);
-        //update sur l'étudiant
-        $student->update([
-            'address' => $request->address,
-            'phone' => $request->phone,
-            'dateOfBirth' => $request->dateOfBirth,
-            'city_id' => $request->city_id,
-        ]);
-
-        return redirect()->route('student.show', ['student' => $student->id])->with('success', 'Étudiant modifié avec succès!');
+        //
     }
 
     /**
@@ -130,7 +114,6 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        $student->delete();
-        return redirect()->route('student.index')->with('success', 'Étudiant suprimé avec succès!');
+        //
     }
 }

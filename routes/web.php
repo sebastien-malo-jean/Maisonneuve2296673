@@ -23,12 +23,11 @@ Route::get('/', function () {
 //routes pour les étudiants
 Route::get('/students', [StudentController::class, 'index'])->name('student.index');
 Route::get('/student/{student}', [StudentController::class, 'show'])->name('student.show');
-Route::get('/edit/student/{student}', [StudentController::class, 'edit'])->name('student.edit');
-Route::put('/edit/student/{student}', [StudentController::class, 'update'])->name('student.update');
-Route::delete('/student/{student}', [StudentController::class, 'destroy'])->name('student.destroy');
 
 // routes pour les users
 Route::get('/users', [UserController::class, 'index'])->name('user.index');
 Route::get('/registration', [UserController::class, 'create'])->name('user.create');
 Route::post('/registration', [UserController::class, 'store'])->name('user.store');
 Route::get('/edit/user/{user}', [UserController::class, 'edit'])->name('user.edit');
+Route::put('/edit/user/{user}', [UserController::class, 'update'])->name('user.update');
+Route::delete('/user/{user}', [UserController::class, 'destroy'])->name('user.destroy');

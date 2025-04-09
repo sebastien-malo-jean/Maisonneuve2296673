@@ -23,14 +23,9 @@
                 </section>
                 <footer class="card-footer">
                     <div class="text-center">
-                        <div class="d-flex justify-content-between">
-                            <a href="{{ route('student.edit', $student->id) }}"
+                        <div class="text-center mb-3">
+                            <a href="{{ route('user.edit', $student->id) }}"
                                 class="btn btn-outline-primary">Modifier</a>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                Delete
-                            </button>
                         </div>
                     </div>
                 </footer>
@@ -39,26 +34,5 @@
     </div>
 </section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Suprimer l'étudiant</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Etes-vous sur de vouloir suprimer cet(te) étudiant(e)?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
-                <form action="" method="post">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-sm btn-danger">Suprimer l'étudiant?</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
 @endsection

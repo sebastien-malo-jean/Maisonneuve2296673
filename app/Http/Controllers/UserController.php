@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Student;
+use App\Models\City;
 
 class UserController extends Controller
 {
@@ -81,7 +82,15 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        //récuperation des students
+        $student = $user->students()->first();
+
+        return view('user.edit', [
+            'user' => $user,
+            'cities' => City::all(),
+            'student' => $student,
+
+        ]);
     }
 
     /**
@@ -89,7 +98,30 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+
+        $request->validate([
+            'name' => 'required|string|min:3|max:50',
+            'email' => 'required|email|unique:users,email,' . $user->id,
+            'address' => 'required|string|min:3|max:200',
+            'phone' => 'required|string',
+            'dateOfBirth' => 'required|date',
+            'city_id' => 'required|numeric',
+        ]);
+
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+        ]);
+
+        $student = $user->students()->first();
+        $student->update([
+            'address' => $request->address,
+            'phone' => $request->phone,
+            'dateOfBirth' => $request->dateOfBirth,
+            'city_id' => $request->city_id,
+        ]);
+
+        return redirect()->route('user.index')->with("success", "L'utilisateur a été mis à jour avec succès !");
     }
 
     /**
@@ -97,6 +129,13 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        // Suppression de l'utilisateur et de l'étudiant
+        $student = $user->students()->first();
+        if ($student) {
+            $student->delete();
+        }
+        $user->delete();
+
+        return redirect()->route('user.index')->with("success", "L'utilisateur a été supprimé avec succès !");
     }
 }
