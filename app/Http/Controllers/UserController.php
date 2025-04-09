@@ -67,7 +67,7 @@ class UserController extends Controller
 
         $user->students()->save($student);
 
-        return redirect()->route('user.index')->with('success', 'Utilisateur et étudiant créés avec succès !');
+        return redirect()->route('user.index')->with('success', 'User and student has been created successfully!');
     }
 
     /**
@@ -122,7 +122,7 @@ class UserController extends Controller
             'city_id' => $request->city_id,
         ]);
 
-        return redirect()->route('user.index')->with("success", "L'utilisateur a été mis à jour avec succès !");
+        return redirect()->route('user.index')->with("success", "The user has been updated successfully!");
     }
 
     /**
@@ -137,6 +137,6 @@ class UserController extends Controller
         }
         $user->delete();
 
-        return redirect()->route('user.index')->with("success", "L'utilisateur a été supprimé avec succès !");
+        return redirect()->route('user.index')->with("success", "The user has been deleted successfully!");
     }
 }

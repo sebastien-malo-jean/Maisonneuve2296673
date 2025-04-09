@@ -2,8 +2,8 @@
 @section('title', "Présentation d'étudiant")
 @section('content')
 <header class="mb-5">
-    <h1>Présentation d'étudiant</h1>
-    <h2>Voici la carte de l'étudiant(e) {{ $student->name }}.</h2>
+    <h1>Student presentation</h1>
+    <h2>Here is the card of the student {{ $student->name }}.</h2>
 </header>
 <section class="container">
     <div class="row justify-content-center">
@@ -14,11 +14,11 @@
                 </section>
                 <section class="card-body">
                     <ul class="list-unstyled">
-                        <li><strong>Adresse : </strong><br>{{ $student->address }}</li>
-                        <li><strong>Téléphone : </strong>{{ $student->phone }}</li>
+                        <li><strong>Adress : </strong><br>{{ $student->address }}</li>
+                        <li><strong>Phone : </strong>{{ $student->phone }}</li>
                         <li><strong>Email : </strong>{{ $user->email }}</li>
-                        <li><strong>Aniversaire : </strong>{{ $student->dateOfBirth }}</li>
-                        <li><strong>Ville : </strong>{{ $student->city->name }}</li>
+                        <li><strong>Birthday : </strong>{{ $student->dateOfBirth }}</li>
+                        <li><strong>City : </strong>{{ $student->city->name }}</li>
                     </ul>
                 </section>
                 <footer class="card-footer">

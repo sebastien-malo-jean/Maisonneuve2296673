@@ -32,8 +32,8 @@
         <a href="{{ route('logout') }}" class="btn btn-secondary ms-2">Logout</a>
         @endauth
         @guest
-        <a href="{{ route('user.create') }}" class="btn btn-primary">Create acount</a>
-        <a href="{{ route('login') }}" class="btn btn-secondary ms-2">Login</a>
+        <a href="{{ route('user.create') }}" class="btn btn-secondary">Create acount</a>
+        <a href="{{ route('login') }}" class="btn btn-primary ms-2">Login</a>
         @endguest
     </div>
 </nav>

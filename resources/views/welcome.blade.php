@@ -6,31 +6,31 @@
 <!-- Section d'introduction -->
 <section class="jumbotron text-center bg-light py-5 fade-in">
     <div class="container-lg">
-        <h1 class="display-4 fw-bold">Bienvenue sur Maisonneuve Connect</h1>
-        <p class="lead">La plateforme qui connecte les étudiants du Collège Maisonneuve pour des échanges efficaces et
-            dynamiques.</p>
-        <a href="#features" class="btn btn-primary btn-lg shadow-sm">Découvrez nos fonctionnalités</a>
+        <h1 class="display-4 fw-bold">Welcome to Maisonneuve Connect</h1>
+        <p class="lead">The platform that allows students at Collège Maisonneuve to connect for effective and dynamic
+            exchanges.</p>
+        <a href="#features" class="btn btn-primary btn-lg shadow-sm">Discover our features</a>
     </div>
 </section>
 
 <!-- Section des fonctionnalités -->
 <section id="features" class="py-5 bg-white">
     <div class="container-lg">
-        <h2 class="text-center mb-4 fw-bold">Fonctionnalités principales</h2>
+        <h2 class="text-center mb-4 fw-bold">Main features</h2>
         <div class="row">
             <!-- Fonctionnalité 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card feature-card h-100">
                     <div class="card-header text-center bg-primary text-white">
-                        <h5 class="card-title">Vue sur les étudiants</h5>
+                        <h5 class="card-title">View of the students</h5>
                     </div>
                     <div class="card-body text-center">
                         <i class="bi bi-people fs-1 text-primary"></i>
-                        <p class="card-text mt-3">Accède à des informations essentielles sur les étudiants du Collège
+                        <p class="card-text mt-3">Access essential information about students at the College
                             Maisonneuve.</p>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="/students" class="btn btn-outline-primary">Voir les étudiants</a>
+                        <a href="/students" class="btn btn-outline-primary">See the students</a>
                     </div>
                 </div>
             </div>
@@ -38,14 +38,14 @@
             <div class="col-md-4 mb-4">
                 <div class="card feature-card h-100">
                     <div class="card-header text-center bg-primary text-white">
-                        <h5 class="card-title">Networking étudiant</h5>
+                        <h5 class="card-title">Student Networking</h5>
                     </div>
                     <div class="card-body text-center">
                         <i class="bi bi-chat-dots fs-1 text-primary"></i>
-                        <p class="card-text mt-3">Connecte-toi avec d'autres étudiants pour échanger et collaborer.</p>
+                        <p class="card-text mt-3">Connect with other students to exchange and collaborate.</p>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="#" class="btn btn-outline-primary disabled">Commencer à réseauter</a>
+                        <a href="#" class="btn btn-outline-primary disabled">Start networking</a>
                     </div>
                 </div>
             </div>
@@ -53,14 +53,14 @@
             <div class="col-md-4 mb-4">
                 <div class="card feature-card h-100">
                     <div class="card-header text-center bg-primary text-white">
-                        <h5 class="card-title">Chat en direct</h5>
+                        <h5 class="card-title">Live chat</h5>
                     </div>
                     <div class="card-body text-center">
                         <i class="bi bi-chat-right-text fs-1 text-primary"></i>
-                        <p class="card-text mt-3">Engage des conversations en temps réel avec tes camarades.</p>
+                        <p class="card-text mt-3">Engage in real-time conversations with your classmates.</p>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="#" class="btn btn-outline-primary disabled">Accéder au chat</a>
+                        <a href="#" class="btn btn-outline-primary disabled">Access the chat</a>
                     </div>
                 </div>
             </div>
@@ -71,9 +71,9 @@
 <!-- Section appel à l'action -->
 <section class="text-center py-5 bg-primary text-white">
     <div class="container-lg">
-        <h2 class="fw-bold">Rejoins la communauté dès maintenant !</h2>
-        <p class="lead">Commence à échanger, partager et apprendre avec tes camarades.</p>
-        <a href="#" class="btn btn-light btn-lg shadow-sm">S'inscrire</a>
+        <h2 class="fw-bold">Join the community now!</h2>
+        <p class="lead">Start sharing and learning with your classmates.</p>
+        <a href="{{ route('user.create') }}" class="btn btn-light btn-lg shadow-sm">sign up</a>
     </div>
 </section>
 @endsection
