@@ -55,8 +55,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        $cities = City::all();
-        return view('student.create', ['cities' => $cities]);
+        //
     }
 
     /**
@@ -64,23 +63,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //validation
-        $request->validate([
-            'address' => 'required|string|min:3|max:200',
-            'phone' => 'required',
-            'dateOfBirth' => 'required|date',
-            'city_id' => 'required|numeric',
-        ]);
-        //verification de la validation
-
-        $student = Student::create([
-            'address' => $request->address,
-            'phone' => $request->phone,
-            'dateOfBirth' => $request->dateOfBirth,
-            'city_id' => $request->city_id,
-        ]);
-
-        return redirect()->route('student.show', ['student' => $student->id])->with('success', "L'étudiant à été créé avec succès!");
+        //
     }
 
     /**
