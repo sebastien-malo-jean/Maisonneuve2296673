@@ -19,7 +19,6 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{{ route('student.index') }}">Liste d'étudiants</a>
-                    <a class="dropdown-item" href="{{ route('student.create') }}">Création d'étudiant</a>
                 </div>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"

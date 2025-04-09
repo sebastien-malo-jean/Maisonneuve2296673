@@ -45,6 +45,7 @@ class StudentController extends Controller
         // Récupérer toutes les villes pour le filtre
         $cities = City::all();
 
+
         // Retourner la vue avec les étudiants et les villes
         return view('student.index', ['students' => $students, 'cities' => $cities]);
     }
@@ -87,7 +88,9 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        return view('student.show', ['student' => $student]);
+        // récupération des users
+        $user = $student->user()->first();
+        return view('student.show', ['student' => $student, 'user' => $user]);
     }
 
     /**
