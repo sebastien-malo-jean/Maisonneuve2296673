@@ -10,18 +10,18 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/">Accueil</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('user.index') }}">Utilisateurs</a>
+                <a class="nav-link" href="{{ route('user.index') }}">Users</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Étudiants
+                    Students
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="{{ route('student.index') }}">Liste d'étudiants</a>
+                    <a class="dropdown-item" href="{{ route('student.index') }}">Students list</a>
                 </div>
             </li>
         </ul>
