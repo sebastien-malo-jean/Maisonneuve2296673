@@ -20,7 +20,7 @@
             </p>
             <p class="card-text">@lang("Comments") ({{ $article->comments->count() }})</p> <!-- Corrigé ici -->
             <small class="text-muted">
-                @lang("WriteBy") {{ $article->user->name }} @lang("At") {{ $article->created_at->format('d/m/Y') }}
+                @lang("WritedBy") {{ $article->user->name }} @lang("At") {{ $article->created_at->format('d/m/Y') }}
             </small>
             <div class="mt-2">
                 <a href="{{ route('articles.show', $article->id) }}" class="btn btn-sm btn-primary">@lang("See")</a>

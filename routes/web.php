@@ -57,8 +57,8 @@ Route::middleware('auth')->group(function () {
     Route::put('/articles/{article}', [ArticleController::class, 'update'])->name('articles.update');
     Route::delete('/articles/{article}', [ArticleController::class, 'destroy'])->name('articles.destroy');
     // routes pour les commentaires
-    Route::post('/articles/{article}/comment', [CommentController::class, 'store'])->name('comments.store');
-    Route::delete('/articles/{article}/comment/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+    Route::post('/articles/{article}/comments', [CommentController::class, 'store'])->name('comments.store');
+    Route::delete('/articles/{article}/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
     Route::get('/articles/{article}/comments/{comment}/edit', [CommentController::class, 'edit'])->name('comments.edit');
     Route::put('/articles/{article}/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
 });

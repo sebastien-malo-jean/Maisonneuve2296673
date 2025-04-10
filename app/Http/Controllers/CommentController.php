@@ -28,7 +28,7 @@ class CommentController extends Controller
     {
         // Vérifier si l'utilisateur authentifié est l'auteur du commentaire
         if (auth()->user()->id !== $comment->user_id) {
-            return redirect()->back()->with('error', 'Vous ne pouvez pas modifier ce commentaire.');
+            return redirect()->back()->with('error', __('lang.__message-comment-cannot-uptdate'));
         }
 
         $request->validate([
@@ -36,30 +36,28 @@ class CommentController extends Controller
         ]);
 
         // Mettre à jour le commentaire
-        $comment->update([
-            'content' => $request->content,
-        ]);
+        $comment->update(['content' => $request->input('content')]);
 
-        return redirect()->route('articles.show', $article->id)->with('success', 'Commentaire mis à jour avec succès !');
+        return redirect()->route('articles.show', $article->id)->with('success', __('lang.__message-comment-updated'));
     }
 
 
     public function edit(Article $article, Comment $comment)
     {
         // Logique d'édition du commentaire
-        return view('comment.edit', compact('article', 'comment'));
+        return view('comments.edit', compact('article', 'comment'));
     }
 
     public function destroy(Article $article, Comment $comment)
     {
         // Vérifier si l'utilisateur authentifié est l'auteur du commentaire
         if (auth()->user()->id !== $comment->user_id) {
-            return redirect()->route('articles.show', $article->id)->with('error', 'Vous ne pouvez pas supprimer ce commentaire.');
+            return redirect()->route('articles.show', $article->id)->with('error', __('lang.__message-comment-cannot-delete'));
         }
 
         // Supprimer le commentaire
         $comment->delete();
 
-        return redirect()->route('articles.show', $article->id)->with('success', 'Commentaire supprimé avec succès !');
+        return redirect()->route('articles.show', $article->id)->with('success', __('lang.__message-comment-deleted'));
     }
 }

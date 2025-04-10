@@ -46,6 +46,15 @@ return [
     "__articles-index-header-title" => "Students's Forum",
     "__articles-index-form-create-btn" => "Write an article",
 
+    //articles create.blade.php
+    "__articles-create-header-title" => "Write a new article",
+    "__articles-create-form-btn" => "Publish the article",
+
+    //article edit.blade.php
+    "__article-edit-header-title" => "Edit your article",
+
+    //comment edit.blade.php
+    "__comment-edit-header-title" => "Edit your comment",
 
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Welcome to Maisonneuve Connect",
@@ -76,4 +85,14 @@ return [
     "__message-auth.register_success" => "Registration successful!",
     "__message-auth.register_failed" => "Registration failed!",
     "__message-user-not-authorized" => "You are not authorized to access this page.",
+    "__message-comment-uptdated" => "Comment updated successfully!",
+    "__message-comment-cannot-update" => "You cannot update this comment.",
+    "__message-comment-deleted" => "Comment deleted successfully!",
+    "__message-comment-cannot-delete" => "You cannot delete this comment.",
+    "__message-article-create-success" => "Article created successfully!",
+    "__message-article-delete-error" => "You are not authorized to delete this article.",
+    "__message-article-delete-success" => "Article deleted successfully!",
+    "__message-article-updated" => "Article updated successfully!",
+    "__message-article-update-error" => "You are not authorized to update this article.",
+    "__message-article-edit-error" => "You are not authorized to edit this article.",
 ];

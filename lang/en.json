@@ -22,8 +22,17 @@
     "YearOfBirth": "Year of Birthday",
     "Username": "Username",
     "Comments": "Comment(s)",
-    "WriteBy": "Write by",
+    "WritedBy": "Writed by",
     "At": "at",
     "See": "See",
-    "Delete": "Delete"
+    "Delete": "Delete",
+    "CreatedAt": "Created at",
+    "CommentedBy": "Commented by",
+    "CommentOn": "Comment on",
+    "YourComment": "Your comment...",
+    "Title": "Title",
+    "Content": "Content",
+    "Cancel": "Cancel",
+    "Update": "Update",
+    "Comment": "Comment"
 }

@@ -22,8 +22,17 @@
     "YearOfBirth": "Année de naissance",
     "Username": "Nom d'utilisateur",
     "Comments": "Commentaire(s)",
-    "WriteBy": "Écrit par",
+    "WritedBy": "Écrit par",
     "At": "le",
     "See": "Voir",
-    "Delete": "Supprimer"
+    "Delete": "Supprimer",
+    "CreatedAt": "Date de création",
+    "CommentedBy": "Commenté par",
+    "CommentOn": "Commentez",
+    "YourComment": "Votre commentaire...",
+    "Title": "Titre",
+    "Content": "Contenu",
+    "Cancel": "Annuler",
+    "Update": "Mettre à jour",
+    "Comment": "commentaire"
 }

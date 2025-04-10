@@ -42,6 +42,20 @@ return [
     "__user-index-header-title" => "Liste des utilisateurs",
     "__user-index-table-title" => "Voici la liste de tous les utilisateurs disponibles sur la plateforme.",
 
+    //articles index.blade.php
+    "__articles-index-header-title" => "Forum des étudiants",
+    "__articles-index-form-create-btn" => "Écrire un article",
+
+    //articles create.blade.php
+    "__articles-create-header-title" => "Écrire un nouvel article",
+    "__articles-create-form-btn" => "Publier l'article",
+
+    //article edit.blade.php
+    "__article-edit-header-title" => "Modifier votre article",
+
+    //comment edit.blade.php
+    "__comment-edit-header-title" => "Modifier votre commentaire",
+
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Bienvenue sur Maisonneuve Connect",
     "__welcome-page-welcome-h1-subtitle" => "La plateforme qui permet aux étudiants du Collège Maisonneuve de se connecter pour des échanges efficaces et dynamiques.",
@@ -70,5 +84,15 @@ return [
     "__message-auth.logout_success" => "Logout successful!",
     "__message-auth.register_success" => "Inscription réussie. Vous pouvez maintenant vous connecter.",
     "__message-auth.register_failed" => "Échec de l'inscription. Veuillez réessayer.",
-    "__message-user-not-authorized" => "Vous n'êtes pas autorisé à accéder à cette page."
+    "__message-user-not-authorized" => "Vous n'êtes pas autorisé à accéder à cette page.",
+    "__message-comment-uptdated" => "Commentaire mis à jour avec succès !",
+    "__message-comment-cannot-update" => "Vous ne pouvez pas mettre à jour ce commentaire.",
+    "__message-comment-deleted" => "Commentaire supprimé avec succès !",
+    "__message-comment-cannot-delete" => "Vous ne pouvez pas supprimer ce commentaire.",
+    "__message-article-create-success" => "L'article a été créé avec succès !",
+    "__message-article-delete-error" => "Vous n'êtes pas autorisé à supprimer cet article.",
+    "__message-article-delete-success" => "L'article a été supprimé avec succès !",
+    "__message-article-updated" => "L'article a été mis à jour avec succès !",
+    "__message-article-update-error" => "Vous n'êtes pas autorisé à mettre à jour cet article.",
+    "__message-article-edit-error" => "Vous n'êtes pas autorisé à modifier cet article.",
 ];
