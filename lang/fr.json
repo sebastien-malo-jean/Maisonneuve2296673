@@ -1,6 +1,6 @@
 {
     "Home": "Accueil",
-    "Users": "Utilisateurs",
+    "User": "Utilisateurs",
     "Students": "Étudiants",
     "StudentsList": "Liste des étudiants",
     "Language": "Langue",
@@ -14,9 +14,10 @@
     "Phone": "Téléphone",
     "Birthday": "Date de naissance",
     "City": "Ville",
-    "Edit": "Éditer",
+    "Edit": "Modifier",
     "Name": "Nom",
     "Email": "Email",
     "Password": "Mot de passe",
-    "ConfirmPassword": "Confirmer le mot de passe"
+    "ConfirmPassword": "Confirmer le mot de passe",
+    "YearOfBirth": "Année de naissance"
 }

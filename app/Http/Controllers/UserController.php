@@ -16,11 +16,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        $students = Student::all();
-        $users = User::select()
+
+        $users = User::with('students.city')
             ->orderby('name')
             ->paginate(10);
-        return view('user.index', ["users" => $users, "students" => $students]);
+        return view('user.index', ["users" => $users]);
     }
 
     /**

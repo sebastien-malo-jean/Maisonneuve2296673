@@ -38,6 +38,9 @@ return [
     "__user-edit-btn-submit" => "Submit the changes",
     "__user-edit-btn-delete" => "Delete",
 
+    //User index.blade.php
+    "__user-index-header-title" => "User List",
+    "__user-index-table-title" => "Here is the list of all the users available on the platform.",
 
 
     //welcome.blade.php

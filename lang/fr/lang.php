@@ -38,6 +38,10 @@ return [
     "__user-edit-btn-submit" => "Soumettre les modifications",
     "__user-edit-btn-delete" => "Supprimer",
 
+    //User index.blade.php
+    "__user-index-header-title" => "Liste des utilisateurs",
+    "__user-index-table-title" => "Voici la liste de tous les utilisateurs disponibles sur la plateforme.",
+
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Bienvenue sur Maisonneuve Connect",
     "__welcome-page-welcome-h1-subtitle" => "La plateforme qui permet aux étudiants du Collège Maisonneuve de se connecter pour des échanges efficaces et dynamiques.",

@@ -1,6 +1,6 @@
 {
     "Home": "Home",
-    "Users": "Users",
+    "User": "Users",
     "Students": "Students",
     "StudentsList": "Students list",
     "Language": "Language",
@@ -18,5 +18,6 @@
     "Name": "Name",
     "Email": "Email",
     "Password": "Password",
-    "ConfirmPassword": "Confirm password"
+    "ConfirmPassword": "Confirm password",
+    "YearOfBirth": "Year of Birthday"
 }
