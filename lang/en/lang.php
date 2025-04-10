@@ -3,11 +3,11 @@ return [
 
     // filter
     "__filters-card-title" => "Filters",
-    "__filters-form-label-Name" => "Name",
-    "__filters-form-label-Email" => "Email",
-    "__filters-form-label-Birthday" => "Birthday",
-    "__filters-form-label-City" => "City",
-    "__filters-form-label-City-option" => "Choose a city...",
+    "__label-Name" => "Name",
+    "__label-Email" => "Email",
+    "__label-Birthday" => "Birthday",
+    "__label-City" => "City",
+    "__label-City-option" => "Choose a city...",
     "__filters-form-label-OrderBy" => "Order by",
     "__filters-form-label-OrderBy-option-1" => "Name",
     "__filters-form-label-OrderBy-option-2" => "Birthday",

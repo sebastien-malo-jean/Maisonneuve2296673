@@ -6,21 +6,21 @@
     <div class="card-body">
         <form action="" method="get">
             <div class="mb-3">
-                <label for="name" class="form-label">@lang("lang.__filters-form-label-Name")</label>
+                <label for="name" class="form-label">@lang("lang.__label-Name")</label>
                 <input type="text" id="name" name="name" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">@lang("lang.__filters-form-label-Email")</label>
+                <label for="email" class="form-label">@lang("lang.__label-Email")</label>
                 <input type="text" id="email" name="email" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="birthOfDate" class="form-label">@lang("lang.__filters-form-label-Birthday")</label>
+                <label for="birthOfDate" class="form-label">@lang("lang.__label-Birthday")</label>
                 <input type="date" id="birthOfDate" name="birthOfDate" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="city" class="form-label">@lang("lang.__filters-form-label-City")</label>
+                <label for="city" class="form-label">@lang("lang.__label-City")</label>
                 <select name="city" id="city" class="form-select">
-                    <option value="">@lang("lang.__filters-form-label-City-option")</option>
+                    <option value="">@lang("lang.__label-City-option")</option>
                     @foreach($cities as $city)
                     <option value="{{ $city->id }}">{{ $city->name }}</option>
                     @endforeach

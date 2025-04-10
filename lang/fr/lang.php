@@ -3,11 +3,11 @@ return [
 
     // filter
     "__filters-card-title" => "Filtres",
-    "__filters-form-label-Name" => "Nom",
-    "__filters-form-label-Email" => "Courriel",
-    "__filters-form-label-Birthday" => "Date de naissance",
-    "__filters-form-label-City" => "Ville",
-    "__filters-form-label-City-option" => "Choisissez une ville...",
+    "__label-Name" => "Nom",
+    "__label-Email" => "Courriel",
+    "__label-Birthday" => "Date de naissance",
+    "__label-City" => "Ville",
+    "__label-City-option" => "Choisissez une ville...",
     "__filters-form-label-OrderBy" => "Trier par",
     "__filters-form-label-OrderBy-option-1" => "Nom",
     "__filters-form-label-OrderBy-option-2" => "Date de naissance",
