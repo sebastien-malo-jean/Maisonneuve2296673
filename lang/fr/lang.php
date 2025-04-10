@@ -2,8 +2,20 @@
 return [
 
     // filter
+    "__filters-card-title" => "Filtres",
+    "__filters-form-label-Name" => "Nom",
+    "__filters-form-label-Email" => "Courriel",
+    "__filters-form-label-Birthday" => "Date de naissance",
+    "__filters-form-label-City" => "Ville",
+    "__filters-form-label-City-option" => "Choisissez une ville...",
+    "__filters-form-label-OrderBy" => "Trier par",
+    "__filters-form-label-OrderBy-option-1" => "Nom",
+    "__filters-form-label-OrderBy-option-2" => "Date de naissance",
+    "__filters-form-label-OrderBy-option-3" => "Email",
+    "__filters-form-label-radio-1" => "Ordre croissant",
+    "__filters-form-label-radio-2" => "Ordre décroissant",
+    "__filters-form-btn" => "Soumettre",
 
-    "filters-card-title" => "Filtres",
 
     //welcome.blade.php
     "__welcome-h1" => "Bienvenue sur Maisonneuve Connect",

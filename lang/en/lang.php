@@ -2,8 +2,19 @@
 return [
 
     // filter
-
-    "filters-card-title" => "Filters",
+    "__filters-card-title" => "Filters",
+    "__filters-form-label-Name" => "Name",
+    "__filters-form-label-Email" => "Email",
+    "__filters-form-label-Birthday" => "Birthday",
+    "__filters-form-label-City" => "City",
+    "__filters-form-label-City-option" => "Choose a city...",
+    "__filters-form-label-OrderBy" => "Order by",
+    "__filters-form-label-OrderBy-option-1" => "Name",
+    "__filters-form-label-OrderBy-option-2" => "Birthday",
+    "__filters-form-label-OrderBy-option-3" => "Email",
+    "__filters-form-label-radio-1" => "Ascending Order",
+    "__filters-form-label-radio-2" => "Descending Order",
+    "__filters-form-btn" => "Submit",
 
     //welcome.blade.php
     "__welcome-h1" => "Welcome to Maisonneuve Connect",
