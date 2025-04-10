@@ -109,7 +109,8 @@ a:hover {
 
 
 .card-header {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
     text-align: center;
 }
