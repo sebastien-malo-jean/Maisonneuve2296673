@@ -60,4 +60,9 @@ return [
     "__welcome-page-CTA-container-subtitle" => "Commencez à partager et à apprendre avec vos camarades de classe !",
     "__welcome-page-CTA-container-btn" => "S'inscrire",
     "__welcome-page-CTA-container-btn-2" => "Se connecter",
+
+    //messages
+    "__message-user-created" => "L'utilisateur a été créé avec succès.",
+    "__message-user-updated" => "L'utilisateur a été mis à jour avec succès.",
+    "__message-user-deleted" => "L'utilisateur a été supprimé avec succès."
 ];

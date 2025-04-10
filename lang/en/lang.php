@@ -61,4 +61,9 @@ return [
     "__welcome-page-CTA-container-subtitle" => "Start sharing and learning with your classmates!",
     "__welcome-page-CTA-container-btn" => "sign up",
     "__welcome-page-CTA-container-btn-2" => "Log in",
+
+    //messages
+    "__message-user-created" => "User and student has been created successfully!",
+    "__message-user-updated" => "User and student has been updated successfully!",
+    "__message-user-deleted" => "User and student has been deleted successfully!",
 ];
