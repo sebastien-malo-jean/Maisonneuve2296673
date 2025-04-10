@@ -5,6 +5,7 @@ return [
     "__filters-card-title" => "Filters",
     "__label-Name" => "Name",
     "__label-Email" => "Email",
+    "__label-Password" => "Password",
     "__label-Birthday" => "Birthday",
     "__label-City" => "City",
     "__label-City-option" => "Choose a city...",
@@ -24,6 +25,10 @@ return [
     //Student show.blade.php
     "__student-show-header-title" => "Student presentation",
     "__student-show-header-subtitle" => "Here is the presentation of the student",
+
+    //User create.blade.php
+    "__user-create-header-title" => "Create your account",
+    "__user-create-btn" => "Create the account",
 
 
     //welcome.blade.php

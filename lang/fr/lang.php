@@ -5,6 +5,7 @@ return [
     "__filters-card-title" => "Filtres",
     "__label-Name" => "Nom",
     "__label-Email" => "Courriel",
+    "__label-Password" => "Mot de passe",
     "__label-Birthday" => "Date de naissance",
     "__label-City" => "Ville",
     "__label-City-option" => "Choisissez une ville...",
@@ -24,6 +25,10 @@ return [
     //Student show.blade.php
     "__student-show-header-title" => "Présentation de l'étudiant",
     "__student-show-header-subtitle" => "Voici la présentation de l'étudiant",
+
+    //User create.blade.php
+    "__user-create-header-title" => "Créez votre compte",
+    "__user-create-btn" => "Créer le compte",
 
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Bienvenue sur Maisonneuve Connect",
