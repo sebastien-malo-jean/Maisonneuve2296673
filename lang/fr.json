@@ -19,5 +19,6 @@
     "Email": "Email",
     "Password": "Mot de passe",
     "ConfirmPassword": "Confirmer le mot de passe",
-    "YearOfBirth": "Année de naissance"
+    "YearOfBirth": "Année de naissance",
+    "Username": "Nom d'utilisateur"
 }

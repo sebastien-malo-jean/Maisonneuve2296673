@@ -14,8 +14,8 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">@lang("User")</th>
-                            <th scope="col">@lang("Address")</th>
                             <th scope="col">@lang("Phone")</th>
+                            <th scope="col">@lang("Address")</th>
                             <th scope="col">@lang("City")</th>
                             <th scope="col">@lang("YearOfBirth")</th>
                             <th scope="col">@lang("Edit")</th>
