@@ -22,6 +22,16 @@
                 Commenté par {{ $comment->user->name }} le {{ $comment->created_at->format('d/m/Y') }}
             </small>
         </div>
+        @if($comment->user_id === auth()->id())
+        <form class="m-3" action="{{ route('comments.destroy', [$article->id, $comment->id]) }}" method="POST"
+            class="d-inline" onsubmit="return confirm('Es-tu sûr de vouloir supprimer cet article ?')">
+            @csrf
+            @method('DELETE')
+            <a href="{{ route('comments.edit', [$article->id, $comment->id]) }}"
+                class="btn btn-sm btn-warning">Modifier</a>
+            <button class="btn btn-sm btn-danger">Supprimer</button>
+        </form>
+        @endif
     </div>
     @endforeach
 

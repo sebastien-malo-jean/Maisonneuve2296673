@@ -24,6 +24,7 @@
             <p class="card-text">
                 {{ app()->getLocale() === 'fr' ? $article->content_fr : $article->content_en }}
             </p>
+            <p class="card-text">commentaires ({{ $article->comments->count() }})</p> <!-- Corrigé ici -->
             <small class="text-muted">
                 Écrit par {{ $article->user->name }} le {{ $article->created_at->format('d/m/Y') }}
             </small>
@@ -43,7 +44,7 @@
         </div>
     </div>
     @empty
-    <p>Aucun article pour le moment.</p>
+    <p>Aucun article disponible.</p>
     @endforelse
     @else
     <p>Veuillez vous connecter pour accéder au forum.</p>
