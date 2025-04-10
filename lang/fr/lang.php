@@ -16,6 +16,10 @@ return [
     "__filters-form-label-radio-2" => "Ordre décroissant",
     "__filters-form-btn" => "Soumettre",
 
+    //index.blade.php
+    "__header-title" => "Liste des étudiants",
+    "__header-subtitle" => "Voici la liste de tous les étudiants disponibles sur la plateforme.",
+    "__card-btn-show" => "Afficher l'étudiant",
 
     //welcome.blade.php
     "__welcome-h1" => "Bienvenue sur Maisonneuve Connect",

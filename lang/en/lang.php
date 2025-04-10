@@ -16,6 +16,11 @@ return [
     "__filters-form-label-radio-2" => "Descending Order",
     "__filters-form-btn" => "Submit",
 
+    //index.blade.php
+    "__header-title" => "Student List",
+    "__header-subtitle" => "Here is the list of all the students available on the platform.",
+    "__card-btn-show" => "Show student",
+
     //welcome.blade.php
     "__welcome-h1" => "Welcome to Maisonneuve Connect",
     "__welcome-h1-subtitle" => "The platform that allows students at Collège Maisonneuve to connect for effective and dynamic exchanges.",

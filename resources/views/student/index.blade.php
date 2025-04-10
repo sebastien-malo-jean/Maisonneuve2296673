@@ -3,8 +3,8 @@
 @section('content')
 
 <header class="mb-4">
-    <h1>Students list</h1>
-    <h2>Here is the list of all the students available on the platform.</h2>
+    <h1>@lang("lang.__header-title")</h1>
+    <h2>@lang("lang.__header-subtitle")</h2>
 </header>
 <div class="row d-flex">
     <div class=" col-md-3">
@@ -21,15 +21,16 @@
                     </section>
                     <section class="card-body">
                         <ul class="list-unstyled">
-                            <li><strong>Adress : </strong><br>{{ $student->address }}</li>
-                            <li><strong>Phone : </strong>{{ $student->phone }}</li>
-                            <li><strong>Birthday : </strong>{{ $student->dateOfBirth }}</li>
-                            <li><strong>City : </strong>{{ $student->city->name }}</li>
+                            <li><strong>@lang("Address") : </strong><br>{{ $student->address }}</li>
+                            <li><strong>@lang("Phone") : </strong>{{ $student->phone }}</li>
+                            <li><strong>@lang("Birthday") : </strong>{{ $student->dateOfBirth }}</li>
+                            <li><strong>@lang("City") : </strong>{{ $student->city->name }}</li>
                         </ul>
                     </section>
                     <footer class="card-footer">
                         <div class="text-center">
-                            <a href="{{ route('student.show', $student->id) }}" class="btn btn-primary">Show student</a>
+                            <a href="{{ route('student.show', $student->id) }}"
+                                class="btn btn-primary">@lang("lang.__card-btn-show")</a>
                         </div>
                     </footer>
                 </article>

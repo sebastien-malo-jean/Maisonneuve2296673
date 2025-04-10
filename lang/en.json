@@ -9,5 +9,9 @@
     "Logout": "Logout",
     "Login": "Login",
     "CreateAcount": "Create account",
-    "greeting": "greeting, "
+    "greeting": "greeting, ",
+    "Address": "Address",
+    "Phone": "Phone",
+    "Birthday": "Birthday",
+    "City": "City"
 }

@@ -9,5 +9,9 @@
     "Logout": "Déconnexion",
     "Login": "Connexion",
     "CreateAcount": "Créer un compte",
-    "greeting": "salut, "
+    "greeting": "salut, ",
+    "Address": "Adresse",
+    "Phone": "Téléphone",
+    "Birthday": "Date de naissance",
+    "City": "Ville"
 }
