@@ -1,11 +1,12 @@
 <div class="card">
+    @php $locale = session()->get('locale'); @endphp
     <div class="card-header">
-        <h4 class="card-title">Filters</h4>
+        <h4 class="card-title">@lang("lang.filters-card-title")</h4>
     </div>
     <div class="card-body">
         <form action="" method="get">
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label">@lang("Name")Name</label>
                 <input type="text" id="name" name="name" class="form-control">
             </div>
             <div class="mb-3">
