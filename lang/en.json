@@ -20,5 +20,10 @@
     "Password": "Password",
     "ConfirmPassword": "Confirm password",
     "YearOfBirth": "Year of Birthday",
-    "Username": "Username"
+    "Username": "Username",
+    "Comments": "Comment(s)",
+    "WriteBy": "Write by",
+    "At": "at",
+    "See": "See",
+    "Delete": "Delete"
 }

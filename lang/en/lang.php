@@ -39,10 +39,12 @@ return [
     "__user-edit-btn-delete" => "Delete",
 
     //user index.blade.php
-    "__user-index-header-title" => "User List",
+    "__user-index-header-title" => "Student forum",
     "__user-index-table-title" => "Here is the list of all the users available on the platform.",
 
-    //articles create.blade.php
+    //articles index.blade.php
+    "__articles-index-header-title" => "Students's Forum",
+    "__articles-index-form-create-btn" => "Write an article",
 
 
     //welcome.blade.php

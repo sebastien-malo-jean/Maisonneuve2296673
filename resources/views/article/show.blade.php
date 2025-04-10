@@ -23,8 +23,8 @@
             </small>
         </div>
         @if($comment->user_id === auth()->id())
-        <form class="m-3" action="{{ route('comments.destroy', [$article->id, $comment->id]) }}" method="POST"
-            class="d-inline" onsubmit="return confirm('Es-tu sûr de vouloir supprimer cet article ?')">
+        <form action="{{ route('comments.destroy', ['article' => $article->id, 'comment' => $comment->id]) }}"
+            method="POST" class="d-inline" onsubmit="return confirm('Es-tu sûr de vouloir supprimer ce commentaire ?')">
             @csrf
             @method('DELETE')
             <a href="{{ route('comments.edit', [$article->id, $comment->id]) }}"

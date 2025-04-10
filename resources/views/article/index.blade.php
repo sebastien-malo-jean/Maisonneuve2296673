@@ -2,42 +2,36 @@
 
 @section('content')
 <div class="container">
-    <h1>Forum des étudiants</h1>
-
-    @if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-    @endif
-
+    <h1>@lang("lang.__user-index-header-title")</h1>
     @auth
     <div class="mb-4">
-        <a href="{{ route('articles.create') }}" class="btn btn-primary">Écrire un article</a>
+        <a href="{{ route('articles.create') }}"
+            class="btn btn-primary">@lang("lang.__articles-index-form-create-btn")</a>
     </div>
 
     @forelse($articles as $article)
     <div class="card mb-3">
         <div class="card-body">
             <h4 class="card-title">
-                {{ app()->getLocale() === 'fr' ? $article->title_fr : $article->title_en }}
+                {{ app()->getLocale() === 'en' ? $article->title_en : $article->title_fr }}
             </h4>
             <p class="card-text">
-                {{ app()->getLocale() === 'fr' ? $article->content_fr : $article->content_en }}
+                {{ app()->getLocale() === 'en' ? $article->content_en : $article->content_fr }}
             </p>
-            <p class="card-text">commentaires ({{ $article->comments->count() }})</p> <!-- Corrigé ici -->
+            <p class="card-text">@lang("Comments") ({{ $article->comments->count() }})</p> <!-- Corrigé ici -->
             <small class="text-muted">
-                Écrit par {{ $article->user->name }} le {{ $article->created_at->format('d/m/Y') }}
+                @lang("WriteBy") {{ $article->user->name }} @lang("At") {{ $article->created_at->format('d/m/Y') }}
             </small>
             <div class="mt-2">
-                <a href="{{ route('articles.show', $article->id) }}" class="btn btn-sm btn-primary">Voir</a>
+                <a href="{{ route('articles.show', $article->id) }}" class="btn btn-sm btn-primary">@lang("See")</a>
                 @if($article->user_id === auth()->id())
-                <a href="{{ route('articles.edit', $article->id) }}" class="btn btn-sm btn-warning">Modifier</a>
+                <a href="{{ route('articles.edit', $article->id) }}" class="btn btn-sm btn-warning">@lang("Edit")</a>
 
                 <form action="{{ route('articles.destroy', $article->id) }}" method="POST" class="d-inline"
                     onsubmit="return confirm('Es-tu sûr de vouloir supprimer cet article ?')">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-sm btn-danger">Supprimer</button>
+                    <button class="btn btn-sm btn-danger">@lang("Delete")</button>
                 </form>
                 @endif
             </div>
