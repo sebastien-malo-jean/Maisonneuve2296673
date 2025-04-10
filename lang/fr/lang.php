@@ -22,15 +22,15 @@ return [
     "__student-index-header-subtitle" => "Voici la liste de tous les étudiants disponibles sur la plateforme.",
     "__student-index-card-btn-show" => "Afficher l'étudiant",
 
-    //Student show.blade.php
+    //student show.blade.php
     "__student-show-header-title" => "Présentation de l'étudiant",
     "__student-show-header-subtitle" => "Voici la présentation de l'étudiant",
 
-    //User create.blade.php
+    //user create.blade.php
     "__user-create-header-title" => "Créez votre compte",
     "__user-create-btn" => "Créer le compte",
 
-    //User edit.blade.php
+    //user edit.blade.php
     "__user-edit-header-title" => "Modifier votre compte",
     "__user-edit-form-header-title" => "Modifier les informations",
     "__user-edit-section-user-title" => "Compte utilisateur",
@@ -38,7 +38,7 @@ return [
     "__user-edit-btn-submit" => "Soumettre les modifications",
     "__user-edit-btn-delete" => "Supprimer",
 
-    //User index.blade.php
+    //user index.blade.php
     "__user-index-header-title" => "Liste des utilisateurs",
     "__user-index-table-title" => "Voici la liste de tous les utilisateurs disponibles sur la plateforme.",
 
@@ -64,5 +64,11 @@ return [
     //messages
     "__message-user-created" => "L'utilisateur a été créé avec succès.",
     "__message-user-updated" => "L'utilisateur a été mis à jour avec succès.",
-    "__message-user-deleted" => "L'utilisateur a été supprimé avec succès."
+    "__message-user-deleted" => "L'utilisateur a été supprimé avec succès.",
+    "__message-auth.login_success" => "Vous êtes connecté avec succès.",
+    "__message-auth.login_failed" => "Échec de la connexion. Vérifiez vos identifiants.",
+    "__message-auth.logout_success" => "Logout successful!",
+    "__message-auth.register_success" => "Inscription réussie. Vous pouvez maintenant vous connecter.",
+    "__message-auth.register_failed" => "Échec de l'inscription. Veuillez réessayer.",
+    "__message-user-not-authorized" => "Vous n'êtes pas autorisé à accéder à cette page."
 ];

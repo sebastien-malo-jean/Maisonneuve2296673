@@ -83,6 +83,9 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        if ($user->id !== Auth::id()) {
+            return redirect()->route('user.index')->with('error', __('lang.__message-user-not-authorized'));
+        }
         //récuperation des students
         $student = $user->students()->first();
 

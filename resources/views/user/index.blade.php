@@ -1,6 +1,12 @@
 @extends('layouts.app')
 @section('title', 'Users')
 @section('content')
+@if (session('error'))
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{ session('error') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
 <h1 class="mt-5 mb-4">@lang("lang.__user-index-header-title")</h1>
 <div class="row justify-content-center mt-5 mb-5">
     <div class="col-md-12">
@@ -42,7 +48,9 @@
                         @endforeach
                     </tbody>
                 </table>
-                {{ $users }}
+                <div class="mt-3">
+                    {{ $users->links() }}
+                </div>
             </div>
         </div>
     </div>

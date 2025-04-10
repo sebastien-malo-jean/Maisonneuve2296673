@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title', "Editing the student account")
 @section('content')
-
 @if(!$errors->isEmpty())
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
     <ul>

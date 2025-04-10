@@ -17,20 +17,20 @@ return [
     "__filters-form-label-radio-2" => "Descending Order",
     "__filters-form-btn" => "Submit",
 
-    //Student index.blade.php
+    //student index.blade.php
     "__student-index-header-title" => "Student List",
     "__student-index-header-subtitle" => "Here is the list of all the students available on the platform.",
     "__student-index-card-btn-show" => "Show student",
 
-    //Student show.blade.php
+    //student show.blade.php
     "__student-show-header-title" => "Student presentation",
     "__student-show-header-subtitle" => "Here is the presentation of the student",
 
-    //User create.blade.php
+    //user create.blade.php
     "__user-create-header-title" => "Create your account",
     "__user-create-btn" => "Create the account",
 
-    //User edit.blade.php
+    //user edit.blade.php
     "__user-edit-header-title" => "Edit your account",
     "__user-edit-form-header-title" => "Edit the information",
     "__user-edit-section-user-title" => "User account",
@@ -38,10 +38,9 @@ return [
     "__user-edit-btn-submit" => "Submit the changes",
     "__user-edit-btn-delete" => "Delete",
 
-    //User index.blade.php
+    //user index.blade.php
     "__user-index-header-title" => "User List",
     "__user-index-table-title" => "Here is the list of all the users available on the platform.",
-
 
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Welcome to Maisonneuve Connect",
@@ -66,4 +65,10 @@ return [
     "__message-user-created" => "User and student has been created successfully!",
     "__message-user-updated" => "User and student has been updated successfully!",
     "__message-user-deleted" => "User and student has been deleted successfully!",
+    "__message-auth.login_success" => "Login successful!",
+    "__message-auth.login_failed" => "Login failed!",
+    "__message-auth.logout_success" => "Logout successful!",
+    "__message-auth.register_success" => "Registration successful!",
+    "__message-auth.register_failed" => "Registration failed!",
+    "__message-user-not-authorized" => "You are not authorized to access this page.",
 ];
