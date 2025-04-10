@@ -30,6 +30,15 @@ return [
     "__user-create-header-title" => "Create your account",
     "__user-create-btn" => "Create the account",
 
+    //User edit.blade.php
+    "__user-edit-header-title" => "Edit your account",
+    "__user-edit-form-header-title" => "Edit the information",
+    "__user-edit-section-user-title" => "User account",
+    "__user-edit-section-student-title" => "Student information",
+    "__user-edit-btn-submit" => "Submit the changes",
+    "__user-edit-btn-delete" => "Delete",
+
+
 
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Welcome to Maisonneuve Connect",

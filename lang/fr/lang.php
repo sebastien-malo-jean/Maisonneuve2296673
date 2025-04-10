@@ -30,6 +30,14 @@ return [
     "__user-create-header-title" => "Créez votre compte",
     "__user-create-btn" => "Créer le compte",
 
+    //User edit.blade.php
+    "__user-edit-header-title" => "Modifier votre compte",
+    "__user-edit-form-header-title" => "Modifier les informations",
+    "__user-edit-section-user-title" => "Compte utilisateur",
+    "__user-edit-section-student-title" => "Informations sur l'étudiant",
+    "__user-edit-btn-submit" => "Soumettre les modifications",
+    "__user-edit-btn-delete" => "Supprimer",
+
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Bienvenue sur Maisonneuve Connect",
     "__welcome-page-welcome-h1-subtitle" => "La plateforme qui permet aux étudiants du Collège Maisonneuve de se connecter pour des échanges efficaces et dynamiques.",

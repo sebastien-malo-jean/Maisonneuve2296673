@@ -14,5 +14,9 @@
     "Phone": "Téléphone",
     "Birthday": "Date de naissance",
     "City": "Ville",
-    "Edit": "Éditer"
+    "Edit": "Éditer",
+    "Name": "Nom",
+    "Email": "Email",
+    "Password": "Mot de passe",
+    "ConfirmPassword": "Confirmer le mot de passe"
 }
