@@ -22,6 +22,8 @@ return [
     "__student-index-card-btn-show" => "Afficher l'étudiant",
 
     //Student show.blade.php
+    "__student-show-header-title" => "Présentation de l'étudiant",
+    "__student-show-header-subtitle" => "Voici la présentation de l'étudiant",
 
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Bienvenue sur Maisonneuve Connect",

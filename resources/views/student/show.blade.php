@@ -2,8 +2,8 @@
 @section('title', "Présentation d'étudiant")
 @section('content')
 <header class="mb-5">
-    <h1>Student presentation</h1>
-    <h2>Here is the card of the student {{ $student->name }}.</h2>
+    <h1>@lang("lang.__student-show-header-title")</h1>
+    <h2>@lang("lang.__student-show-header-subtitle") {{ $user->name }}.</h2>
 </header>
 <section class="container">
     <div class="row justify-content-center">

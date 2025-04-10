@@ -22,6 +22,8 @@ return [
     "__student-index-card-btn-show" => "Show student",
 
     //Student show.blade.php
+    "__student-show-header-title" => "Student presentation",
+    "__student-show-header-subtitle" => "Here is the presentation of the student",
 
 
     //welcome.blade.php
