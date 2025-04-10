@@ -16,6 +16,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('user.index') }}">@lang("Users")</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('articles.index') }}">Forum</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">

@@ -42,6 +42,9 @@ return [
     "__user-index-header-title" => "User List",
     "__user-index-table-title" => "Here is the list of all the users available on the platform.",
 
+    //articles create.blade.php
+
+
     //welcome.blade.php
     "__welcome-page-welcome-h1" => "Welcome to Maisonneuve Connect",
     "__welcome-page-welcome-h1-subtitle" => "The platform that allows students at Collège Maisonneuve to connect for effective and dynamic exchanges.",
