@@ -3,8 +3,8 @@
 @section('content')
 
 <header class="mb-4">
-    <h1>@lang("lang.__header-title")</h1>
-    <h2>@lang("lang.__header-subtitle")</h2>
+    <h1>@lang("lang.__student-index-header-title")</h1>
+    <h2>@lang("lang.__student-index-header-subtitle")</h2>
 </header>
 <div class="row d-flex">
     <div class=" col-md-3">
@@ -30,7 +30,7 @@
                     <footer class="card-footer">
                         <div class="text-center">
                             <a href="{{ route('student.show', $student->id) }}"
-                                class="btn btn-primary">@lang("lang.__card-btn-show")</a>
+                                class="btn btn-primary">@lang("lang.__student-index-card-btn-show")</a>
                         </div>
                     </footer>
                 </article>

@@ -16,27 +16,30 @@ return [
     "__filters-form-label-radio-2" => "Descending Order",
     "__filters-form-btn" => "Submit",
 
-    //index.blade.php
-    "__header-title" => "Student List",
-    "__header-subtitle" => "Here is the list of all the students available on the platform.",
-    "__card-btn-show" => "Show student",
+    //Student index.blade.php
+    "__student-index-header-title" => "Student List",
+    "__student-index-header-subtitle" => "Here is the list of all the students available on the platform.",
+    "__student-index-card-btn-show" => "Show student",
+
+    //Student show.blade.php
+
 
     //welcome.blade.php
-    "__welcome-h1" => "Welcome to Maisonneuve Connect",
-    "__welcome-h1-subtitle" => "The platform that allows students at Collège Maisonneuve to connect for effective and dynamic exchanges.",
-    "__welcome-h1-btn" => "Discover our features",
-    "__features-card-title" => "Main features",
-    "__features-card-1-title" => "View of the students",
-    "__features-card-1-body" => "Access essential information about students at the College Maisonneuve.",
-    "__features-card-1-btn" => "See the students",
-    "__features-card-2-title" => "Student Networking",
-    "__features-card-2-body" => "Connect with other students to exchange and collaborate.",
-    "__features-card-2-btn" => "Start networking",
-    "__features-card-3-title" => "Live chat",
-    "__features-card-3-body" => "Engage in real-time conversations with your classmates.",
-    "__features-card-3-btn" => "Start chatting",
-    "__CTA-container-title" => "Join the community now!",
-    "__CTA-container-subtitle" => "Start sharing and learning with your classmates!",
-    "__CTA-container-btn" => "sign up",
-    "__CTA-container-btn-2" => "Log in",
+    "__welcome-page-welcome-h1" => "Welcome to Maisonneuve Connect",
+    "__welcome-page-welcome-h1-subtitle" => "The platform that allows students at Collège Maisonneuve to connect for effective and dynamic exchanges.",
+    "__welcome-page-welcome-h1-btn" => "Discover our features",
+    "__welcome-page-features-card-title" => "Main features",
+    "__welcome-page-features-card-1-title" => "View of the students",
+    "__welcome-page-features-card-1-body" => "Access essential information about students at the College Maisonneuve.",
+    "__welcome-page-features-card-1-btn" => "See the students",
+    "__welcome-page-features-card-2-title" => "Student Networking",
+    "__welcome-page-features-card-2-body" => "Connect with other students to exchange and collaborate.",
+    "__welcome-page-features-card-2-btn" => "Start networking",
+    "__welcome-page-features-card-3-title" => "Live chat",
+    "__welcome-page-features-card-3-body" => "Engage in real-time conversations with your classmates.",
+    "__welcome-page-features-card-3-btn" => "Start chatting",
+    "__welcome-page-CTA-container-title" => "Join the community now!",
+    "__welcome-page-CTA-container-subtitle" => "Start sharing and learning with your classmates!",
+    "__welcome-page-CTA-container-btn" => "sign up",
+    "__welcome-page-CTA-container-btn-2" => "Log in",
 ];

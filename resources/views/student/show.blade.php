@@ -14,18 +14,20 @@
                 </section>
                 <section class="card-body">
                     <ul class="list-unstyled">
-                        <li><strong>Adress : </strong><br>{{ $student->address }}</li>
-                        <li><strong>Phone : </strong>{{ $student->phone }}</li>
-                        <li><strong>Email : </strong>{{ $user->email }}</li>
-                        <li><strong>Birthday : </strong>{{ $student->dateOfBirth }}</li>
-                        <li><strong>City : </strong>{{ $student->city->name }}</li>
+                        <li><strong>@lang("Address") : </strong><br>{{ $student->address }}</li>
+                        <li><strong>@lang("Phone") : </strong>{{ $student->phone }}</li>
+                        <li><strong>@lang("Email") : </strong>{{ $user->email }}</li>
+                        <li><strong>@lang("Birthday") : </strong>{{ $student->dateOfBirth }}</li>
+                        <li><strong>@lang("City") : </strong>{{ $student->city->name }}</li>
                     </ul>
                 </section>
                 <footer class="card-footer">
                     <div class="text-center">
                         <div class="text-center mb-3">
+                            @if ($student->id == auth()->user()->id)
                             <a href="{{ route('user.edit', $student->id) }}"
-                                class="btn btn-outline-primary">Modifier</a>
+                                class="btn btn-outline-primary">@lang("Edit")</a>
+                            @endif
                         </div>
                     </div>
                 </footer>
